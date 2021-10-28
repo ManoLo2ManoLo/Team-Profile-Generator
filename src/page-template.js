@@ -7,29 +7,37 @@ function generateIcon(data) {
 }
 
 function generateTeam(data) {
-  if (data.length === 0) {
-    return '';
-  } else {
-    for (let i = 1; data.length; i++) {
-      return `<div class="row center">
-      <div class="col s6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">${data[i].name}</span>
-              <p><i class="${generateIcon(data[i].role)}"></i> ${data[i].role}</p>
-            </div>
-            <div class="card-action">
-              <p class="white-text">ID: ${data[i].ID}</p>
-              <P class="white-text">Email: <a href="mailto: ${data[i].email}" target="_blank">${data[i].email}</a></P>
-              <P class="white-text">Github: <a href="https://www.github.com/${data[i].github}" target="_blank">${data[i].github}</a></P>
-              <p class="white-text">Office Number: ${data[i].office}</p>
-            </div>
+    return `
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">${data.name}</span>
+            <p><i class="${generateIcon(data.role)}"></i> ${data.role}</p>
+          </div>
+          <div class="card-action">
+            <p class="white-text">ID: ${data.ID}</p>
+            <P class="white-text">Email: <a href="mailto: ${data.email}" target="_blank">${data.email}</a></P>
+            <P class="white-text">Github: <a href="https://www.github.com/${data.github}" target="_blank">${data.github}</a></P>
+            <p class="white-text">Office Number: ${data.office}</p>
           </div>
         </div>
       </div>
 
+    `
+}
+
+function printTeamLayout(data) {
+  let print = ''
+  if (data.length > 1) {
+    for (let i = 1; i < data.length; i++) {
+      console.log(data[i])
+      print += `
+        ${generateTeam(data[i])}
       `
     }
+    return print;
+  } else {
+    return ' '
   }
 }
 
@@ -54,7 +62,7 @@ function generatePage(data) {
 
         <div class="container">
             <div class="row center">
-                <div class="col s6">
+                <div class="col s4">
                     <div class="card blue-grey darken-1">
                       <div class="card-content white-text">
                         <span class="card-title">${data[0].name}</span>
@@ -64,11 +72,13 @@ function generatePage(data) {
                       <div class="card-action">
                         <p class="white-text">ID: ${data[0].ID}</p>
                         <P class="white-text">Email: <a href="mailto: ${data[0].email}" target="_blank">${data[0].email}</a></P>
-                        <p class="white-text">Office Number: ${data[0].office}</p>
+                        <p class="white-text">Office Number: ${data[0].office}</p> <br>
                       </div>
                     </div>
                   </div>
-                  ${generateTeam(data)}
+
+                  ${printTeamLayout(data)}
+
             </div>
         </div>
         
