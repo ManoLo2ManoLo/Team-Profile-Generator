@@ -1,3 +1,11 @@
+function generateIcon(data) {
+  if (data === 'Engineer') {
+    return `fas fa-glasses`
+  } else {
+    return `fas fa-user-graduate`
+  }
+}
+
 function generateTeam(data) {
   if (data.length === 0) {
     return '';
@@ -8,7 +16,7 @@ function generateTeam(data) {
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">${data[i].name}</span>
-              <p><i class="fas fa-mug-hot"></i> ${data[i].role}</p>
+              <p><i class="${generateIcon(data[i].role)}"></i> ${data[i].role}</p>
             </div>
             <div class="card-action">
               <p class="white-text">ID: ${data[i].ID}</p>
