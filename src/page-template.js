@@ -1,3 +1,30 @@
+function generateTeam(data) {
+  if (data.length === 0) {
+    return '';
+  } else {
+    for (let i = 1; data.length; i++) {
+      return `<div class="row center">
+      <div class="col s6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">${data[i].name}</span>
+              <p><i class="fas fa-mug-hot"></i> ${data[i].role}</p>
+            </div>
+            <div class="card-action">
+              <p class="white-text">ID: ${data[i].ID}</p>
+              <P class="white-text">Email: <a href="mailto: ${data[i].email}" target="_blank">${data[i].email}</a></P>
+              <P class="white-text">Github: <a href="https://www.github.com/${data[i].github}" target="_blank">${data[i].github}</a></P>
+              <p class="white-text">Office Number: ${data[i].office}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      `
+    }
+  }
+}
+
 function generatePage(data) {
     return `<!DOCTYPE html>
     <html lang="en">
@@ -19,20 +46,21 @@ function generatePage(data) {
 
         <div class="container">
             <div class="row center">
-                <div class="col s12 m6">
+                <div class="col s6">
                     <div class="card blue-grey darken-1">
                       <div class="card-content white-text">
-                        <span class="card-title">${data.mName}</span>
+                        <span class="card-title">${data[0].name}</span>
                         <p><i class="fas fa-mug-hot"></i> Manager</p>
                         <p></p>
                       </div>
                       <div class="card-action">
-                        <p class="white-text">ID: ${data.mID}</p>
-                        <P class="white-text">Email: <a href="mailto: ${data.mEmail}" target="_blank">${data.mEmail}</a></P>
-                        <p class="white-text">Office Number: ${data.mOffice}</p>
+                        <p class="white-text">ID: ${data[0].ID}</p>
+                        <P class="white-text">Email: <a href="mailto: ${data[0].email}" target="_blank">${data[0].email}</a></P>
+                        <p class="white-text">Office Number: ${data[0].office}</p>
                       </div>
                     </div>
                   </div>
+                  ${generateTeam(data)}
             </div>
         </div>
         
