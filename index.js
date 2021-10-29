@@ -47,6 +47,19 @@ const managerQuestions = [
     },
     {
         type: 'input',
+        name: 'github',
+        message: "What is the team member's Github username?",
+        validate: github => {
+            if (github) {
+                return true;
+            } else {
+                console.log('Please enter a Github username!')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
         name: 'office',
         message: "What is the team manager's office number?",
         validate: office => {
@@ -116,8 +129,8 @@ const teamQuestions = [
         type: 'input',
         name: 'github',
         message: "What is the team member's Github username?",
-        validate: email => {
-            if (email) {
+        validate: github => {
+            if (github) {
                 return true;
             } else {
                 console.log('Please enter a Github username!')
