@@ -13,7 +13,7 @@ body {
 
 nav {
     background-color: var(--old);
-    border-bottom: var(--lavender) 5px solid;
+    box-shadow: var(--melon) 5px 5px 5px;
 }
 
 .brand-logo {
@@ -29,4 +29,24 @@ nav {
 .card {
     background-color: var(--old);
     height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--melon) 5px 5px 5px;
+}
+
+.card:hover {
+    background-color: var(--lavender);
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.icon {
+    font-size:20px;
+}
+
+p {
+    font-size: 17px;
 }
