@@ -1,13 +1,5 @@
 const copyFile = require('../utils/generate-site');
 
-function generateIcon(data) {
-  if (data === 'Engineer') {
-    return `fas fa-glasses`
-  } else {
-    return `fas fa-user-graduate`
-  }
-}
-
 function generateTeam(data) {
   if (data.github) {
     return `<div class="col s6">
