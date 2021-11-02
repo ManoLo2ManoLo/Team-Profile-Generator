@@ -36,7 +36,7 @@ const managerQuestion = () => {
             name: 'confirm',
             message: "Would you like to add a team member?",
             default: false
-        },
+        }
     ]).then(function(data){
         let {name, id, email, office, confirm} = data;
         let manager = new Manager(name, id, email, office);
@@ -98,7 +98,7 @@ const engineerQuestion = () => {
             name: 'confirm',
             message: "Would you like to add a team member?",
             default: false
-        },
+        }
     ]).then(function(data){
         let {name, id, email, github, confirm} = data;
         let employee = new Engineer(name, id, email, github);
@@ -141,7 +141,7 @@ const internQuestion = () => {
             name: 'confirm',
             message: "Would you like to add a team member?",
             default: false
-        },
+        }
     ]).then(function(data){
         let {name, id, email, school, confirm} = data;
         let employee = new Intern(name, id, email, school);
