@@ -47,6 +47,7 @@ const managerQuestion = () => {
             console.log('\n--------------------------------------\n')
             employeeQuestion();
         } else {
+            console.log('Generatring Team Profile...');
             writeToFile('./dist/index.html', generatePage(data));
         }
     })
@@ -109,6 +110,7 @@ const engineerQuestion = () => {
             console.log('\n--------------------------------------\n')
             employeeQuestion();
         } else {
+            console.log('Generatring Team Profile...');
             writeToFile('./dist/index.html', generatePage(teamArray));
         }
     })
@@ -152,6 +154,7 @@ const internQuestion = () => {
             console.log('\n--------------------------------------\n')
             employeeQuestion();
         } else {
+            console.log('Generatring Team Profile...');
             writeToFile('./dist/index.html', generatePage(teamArray));
         }
     })
