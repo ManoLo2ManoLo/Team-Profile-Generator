@@ -31,7 +31,7 @@ This screenshot shows the webpage created based on the previous information that
 
 
 ## Credits
-This code was typed and revised by Manuel Canas-Menendez (![ManoLo2ManoLo](http://www.github.com/ManoLo2ManoLo))
+This code was typed and revised by Manuel Canas-Menendez (ManoLo2ManoLo)
 
 ## License
 MIT License
