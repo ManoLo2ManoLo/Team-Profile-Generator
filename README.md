@@ -2,7 +2,7 @@
 
 ## Link Section
 Link to Github Repository: https://github.com/ManoLo2ManoLo/Team-Profile-Generator.git <br />
-Link to Video Walkthrough:
+Link to Video Walkthrough: https://watch.screencastify.com/v/G3e3H6BoFYm2ocLuko6n
 
 ## Table of Contents
 * [Description](#description)
