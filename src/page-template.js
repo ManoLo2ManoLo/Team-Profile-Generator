@@ -1,5 +1,6 @@
 const copyFile = require('../utils/generate-site');
 
+// funtion that will input the engineer and intern's information
 function generateTeam(data) {
   if (data.github) {
     return `<div class="col s6">
@@ -32,6 +33,7 @@ function generateTeam(data) {
   }
 }
 
+// funtion to print the employee array into the generatepage function
 function printTeamLayout(data) {
   let print = ''
   if (data.length > 1) {
@@ -46,6 +48,7 @@ function printTeamLayout(data) {
   }
 }
 
+// function to is sent to index.js to print the data returned from this function
 function generatePage(data) {
   copyFile() 
   return `<!DOCTYPE html>

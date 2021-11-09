@@ -9,6 +9,7 @@ const Intern = require('./lib/Intern.js');
 
 const teamArray = [];
 
+// function to ask the manager their set of questions
 const managerQuestion = () => {
     inquirer.prompt([
         {
@@ -53,6 +54,7 @@ const managerQuestion = () => {
     })
 }
 
+// function to ask if what role you want to give the newly added employee
 const employeeQuestion = () => { 
     inquirer.prompt([
         {
@@ -72,6 +74,7 @@ const employeeQuestion = () => {
     })
 }
 
+// function to ask if the user chooses engineer as the employee's role
 const engineerQuestion = () => { 
     inquirer.prompt([
         {
@@ -116,6 +119,7 @@ const engineerQuestion = () => {
     })
 }
 
+// function to ask if the user chooses intern as the employee's role
 const internQuestion = () => { 
     inquirer.prompt([
         {
@@ -160,6 +164,7 @@ const internQuestion = () => {
     })
 }
 
+// function to write the index.js file into the dist folder
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function(err) {
         if(err) {
