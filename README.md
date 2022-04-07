@@ -1,7 +1,11 @@
 # Team-Profile-Generator
+<p align="center">
+    <img align="center" src="https://img.shields.io/badge/-JavaScript-000000?style=for-the-badge&logo=JavaScript" alt="JavaScript" />
+    <img align="center" src="https://img.shields.io/badge/-CSS3-000000?style=for-the-badge&logo=CSS3" alt="CSS3" />
+    <img align="center" src="https://img.shields.io/badge/-HTML5-000000?style=for-the-badge&logo=HTML5" alt="HTML5" />
+</p>
 
-## Link Section
-Link to Github Repository: https://github.com/ManoLo2ManoLo/Team-Profile-Generator.git <br />
+## Link(s)
 Link to Video Walkthrough: https://watch.screencastify.com/v/G3e3H6BoFYm2ocLuko6n
 
 ## Table of Contents
@@ -10,8 +14,25 @@ Link to Video Walkthrough: https://watch.screencastify.com/v/G3e3H6BoFYm2ocLuko6
 * [Credits](#credits)
 * [License](#license)
 
-## Description
-The purpose of this application is to create a profile for your team. The team is consisted of a manager, who chooses how many engineer and interns they have. In git bash, to start the application you type 'node index.js'. It will prompt you to answer a few questions about the team manager, followed by a question to add a team member. If they choose to not have a team member, an html and css documents is created in a seperate folder. If they choose to have a team member, they will get asked if its an intern or engineer, as well as that team member's information. The cycle will continue until the user chooses to not add a team member. Which will results in the whole team profile will be created.
+## Features
+1. User can create an create a team.
+2. Add as manage members as the manager needs.
+3. When the team  is completed, an html and css of the file team profile is generated.
+
+## User Story
+As a user who is also a manager, I want a quick and easy application where I can create team profiles so I can quickly track my employee. I can add as many members to my team member based on their information, then a webpage is created from user input.
+
+## Clone Repository
+* git clone https://github.com/ManoLo2ManoLo/Team-Profile-Generator.git
+
+## Install Dependencies
+* All NPM packages required for this application (jest, inquirer) are already listed as dependencies in the package.json file. Run the
+command 'npm i' command in your terminal at the root directory level to install the packages.
+* Ensure you have Node.js installed on your machine. The budget tracker application will be invoked by entering node server.js in the command line.
+
+## Start Application
+After all NPM packages are install, to start the application in terminal run:
+* node index.js
 
 ## Screenshot
 In this screenshot, you can see that the user gets to add the information of the manager of the team. At the end it will ask if they would like to add a team member. If they were to have said no, then the team profile were to be created. <br />
@@ -30,28 +51,14 @@ This screenshot shows the webpage created based on the previous information that
 ![Screenshot (405)](https://user-images.githubusercontent.com/88364269/139925497-8cf067bf-a70e-4c52-904d-5aeee9b66d3a.png)
 
 
-## Credits
-This code was typed and revised by Manuel Canas-Menendez (ManoLo2ManoLo)
+## Credit
+This application was typed and revised Manuel Canas-Menendez (ManoLo2ManoLo). <br />
+
+* [Github](https://github.com/ManoLo2ManoLo)
+* [Portfolio](https://manolo2manolo.github.io/React-Portfolio/)
+* [LinkedIn](https://www.linkedin.com/in/manuel-canas-menendez-33354b21b/)
 
 ## License
-MIT License
-
-Copyright (c) 2021 Manuel Canas-Menendez
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+<p align="center">
+    <img align="center" src="https://img.shields.io/github/license/ManoLo2ManoLo/Team-Profile-Generator?style=for-the-badge" alt="license" />
+</p>
