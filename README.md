@@ -8,12 +8,6 @@
 ## Link(s)
 Link to Video Walkthrough: https://watch.screencastify.com/v/G3e3H6BoFYm2ocLuko6n
 
-## Table of Contents
-* [Description](#description)
-* [Screenshot](#screenshot)
-* [Credits](#credits)
-* [License](#license)
-
 ## Features
 1. User can create an create a team.
 2. Add as manage members as the manager needs.
